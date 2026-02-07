@@ -1,0 +1,13 @@
+[package]
+name = "sample"
+version = "0.1.0"
+edition = "2024"
+
+[[bench]]
+harness = false
+name = "benchmarks"
+
+[dependencies]
+
+[dev-dependencies]
+criterion = "0.8.1"

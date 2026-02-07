@@ -1,0 +1,17 @@
+{
+    "recommendations": [
+        "usernamehw.errorlens",
+        // Rust extensions
+        "rust-lang.rust-analyzer",
+        "vadimcn.vscode-lldb",
+        "fill-labs.dependi",
+        // TOML extensions
+        "tombi-toml.tombi",
+        // Markdown extensions
+        "DavidAnson.vscode-markdownlint",
+        "TakumiI.markdowntable",
+        // General extensions
+        "esbenp.prettier-vscode",
+        "tekumara.typos-vscode"
+    ]
+}

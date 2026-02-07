@@ -1,0 +1,64 @@
+// Remote Tasks Configuration
+// These tasks run on the remote server
+[
+    {
+        "label": "cargo build",
+        "command": "cargo",
+        "args": ["build"],
+        "tags": ["build"],
+    },
+    {
+        "label": "cargo run",
+        "command": "cargo",
+        "args": ["run"],
+        "tags": ["run"],
+    },
+    {
+        "label": "cargo test",
+        "command": "cargo",
+        "args": ["test"],
+        "tags": ["test"],
+    },
+    {
+        "label": "cargo bench",
+        "command": "cargo",
+        "args": ["bench"],
+        "tags": ["bench"],
+    },
+    {
+        "label": "cargo clippy",
+        "command": "cargo",
+        "args": ["clippy", "--all-targets", "--all-features"],
+        "tags": ["lint"],
+    },
+    {
+        "label": "cargo fmt",
+        "command": "cargo",
+        "args": ["fmt", "--all"],
+        "tags": ["format"],
+    },
+    {
+        "label": "cargo check",
+        "command": "cargo",
+        "args": ["check"],
+        "tags": ["check"],
+    },
+    {
+        "label": "run example: basic_example",
+        "command": "cargo",
+        "args": ["run", "--example", "basic_example"],
+        "tags": ["example"],
+    },
+    {
+        "label": "debug build",
+        "command": "cargo",
+        "args": ["build"],
+        "tags": ["debug-build"],
+    },
+    {
+        "label": "release build",
+        "command": "cargo",
+        "args": ["build", "--release"],
+        "tags": ["release-build"],
+    },
+]

@@ -1,0 +1,35 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Main Program",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/debug/sample",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "cargo build",
+            "sourceLanguages": ["rust"],
+        },
+        {
+            "name": "Debug Tests",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/debug/deps/sample-${command:pickProcess}",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "cargo test --lib --no-run",
+            "sourceLanguages": ["rust"],
+        },
+        {
+            "name": "Debug Current Test",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/debug/deps/sample-${command:pickProcess}",
+            "args": ["${selectedText}", "--exact", "--nocapture"],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "cargo test --lib --no-run",
+            "sourceLanguages": ["rust"],
+        },
+    ],
+}

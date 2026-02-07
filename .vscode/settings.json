@@ -1,0 +1,60 @@
+{
+    /* Rust file settings */
+    "[rust]": {
+        "editor.formatOnSave": true,
+    },
+    /* toml file settings */
+    "[toml]": {
+        "editor.defaultFormatter": "tombi-toml.tombi",
+        "editor.formatOnSave": true,
+    },
+    /* json, jsonc */
+    "[json][jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features",
+        "editor.formatOnSave": true,
+    },
+    /* yaml */
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+    },
+    /* markdown */
+    "[markdown]": {
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+        "editor.formatOnSave": true,
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "off",
+            "other": "off",
+        },
+    },
+    "markdown-preview-enhanced.breakOnSingleNewLine": false,
+    "files.associations": {
+        "dprint.json": "jsonc",
+        "settings.json": "jsonc",
+    },
+    /* ignore, exclude settings */
+    "files.exclude": {
+        // Rust build artifacts
+        "**/.cargo": true,
+        "**/target": false,
+        // General
+        "**/.git": false,
+        "**/.DS_Store": true,
+    },
+    "files.watcherExclude": {
+        // Rust build artifacts
+        "**/target": true,
+        "**/.cargo": true,
+        // General
+        "**/.git": true,
+    },
+    "search.exclude": {
+        // Rust build artifacts
+        "**/target": true,
+        "**/.cargo": true,
+        // General
+        "**/.git": true,
+    },
+}
