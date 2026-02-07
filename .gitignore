@@ -202,9 +202,6 @@ debug/
 # Rust cargo
 target/
 
-# Zed local debug configuration
-.zed/debug.json
-
 # Other files to ignore
 .DS_Store
 *.swp

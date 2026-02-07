@@ -1,0 +1,38 @@
+[
+    {
+        "label": "Debug Main Program",
+        "adapter": "CodeLLDB",
+        "request": "launch",
+        "program": "$ZED_WORKTREE_ROOT/target/debug/sample",
+        "args": [],
+        "cwd": "$ZED_WORKTREE_ROOT",
+        "build": {
+            "command": "cargo",
+            "args": ["build"],
+        },
+    },
+    {
+        "label": "Debug Tests",
+        "adapter": "CodeLLDB",
+        "request": "launch",
+        "program": "${cargo:test}",
+        "args": [],
+        "cwd": "$ZED_WORKTREE_ROOT",
+        "build": {
+            "command": "cargo",
+            "args": ["test", "--lib", "--no-run"],
+        },
+    },
+    {
+        "label": "Debug Example: basic_example",
+        "adapter": "CodeLLDB",
+        "request": "launch",
+        "program": "$ZED_WORKTREE_ROOT/target/debug/examples/basic_example",
+        "args": [],
+        "cwd": "$ZED_WORKTREE_ROOT",
+        "build": {
+            "command": "cargo",
+            "args": ["build", "--example", "basic_example"],
+        },
+    },
+]
